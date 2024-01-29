@@ -33,7 +33,7 @@ img{
 }
 
 figcaption,p { /* ici c'est la couleur de figcation et p (paragraphe)*/
-    color: ;
+    color: red
 }
 
 div {
@@ -50,3 +50,42 @@ div p {
     padding: 50px;
     border-radius: 30px;
 }
+
+
+
+
+
+
+.imageCheval{
+    /**/
+    transition: 1s;
+}
+
+
+
+.imageCheval:hover{
+    transform: scale(1.1);
+    /* */
+}
+
+/*style pour la classe nommée "imageDauphin"*/
+.imageDauphin{
+
+    display: block; /*définit l'affichage de l'élément en tant que bloc */
+    margin: 30px auto;
+    transition: transform 1s;
+}
+
+.imageDauphin:hover{
+    transform: rotate(-10deg); /* Fait tourner l'image de -10deg lorsqu'elle est survolée*/
+}
+
+
+
+
+
+
+
+
+
+
