@@ -38,5 +38,52 @@ div.section1 {
 }
 
 div.section1 img {
-    borber-raddius: 20px;
+border-radius: 20px;
 }
+
+div.section2 {
+    background: url(../img/codeht.jpg) ;
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    
+
+}
+
+div.section2 p {
+    display: inline-block;
+    border: solid 2px #d9a9db;
+    width: 33%;
+    padding: 20px;
+    background-color: dimgrey;
+    text-align: left;
+
+}
+div.pieddepage {
+    border: solid 2px #11009E;
+    margin-top: 20px;
+    text-align: center;
+}
+
+div.pieddepage ul {
+
+    display: inline-block;
+    width: 30%;
+    list-style: none;
+
+}
+div.pieddepage ul  li {
+    margin-bottom: 20px;
+}
+
+div.pieddepage ul li a {
+    color: #11009E;
+    background-color: #d9a9db;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
