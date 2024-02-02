@@ -1,87 +1,74 @@
-/*Feuille de style pour la page : balises de mise en page*/
+/* Feuilles de styles pour la page exo.html*/
 body{
-    background-color: #d4d4d4;
+    background-color: #FBFADA;
 }
-div.navigation{
+header{
     text-align: center;
-    border: 2px solid #4942E4;
+    border: 2px solid #436850;
     padding: 20px;
 }
 
 h1{
     text-transform: uppercase;
-    color: #11009E;
+    color: #12372A;
 }
-.navigation a {
-    background-color: #d9a9db;
+.lien a{ 
+    background-color: #ADBC9F;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
     width: 33%;
     padding: 5px 0;
-    border-radius: 5px;
-    
-    
+    border-radius: 10px;   
 }
-.navigation a:hover {
-    background-color: #11009E;
+.lien a:hover{
+    background-color: #12372A;
 }
-div.main{
-    border : 2px solid #11009E;
+article.articles {
+    border : 2px solid #436850;
     padding: 20px 40px;
     margin-top: 30px;
 }
-div.section1 {
+article.articles1 {
     text-align: center;
-    
 }
-
-div.section1 img {
-border-radius: 20px;
+article.articles1 img{
+    border-radius: 20px;
 }
-
-div.section2 {
-    background: url(../img/codeht.jpg);
+article.articles2 {
+    background: url(../image/codeht.jpg) ;
     padding: 100px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
     text-align: center;
-
 }
-
-div.section2 p {
+article.articles2 p{
     display: inline-block;
-    border: solid 2px #d9a9db;
+    border: solid 2px #12372A;
     width: 30%;
     padding: 10px;
-    background-color: dimgrey;
+    background-color:  rgb(173, 188, 159, 0.3);
     text-align: left;
-    margin: 0 5px 0;
 }
-
-div.pieddepage {
-    border: solid 2px #11009E;
+footer {
+    border: solid 2px #12372A;
     margin-top: 20px;
     text-align: center;
 }
-
-div.pieddepage ul {
-
+footer ul{
     display: inline-block;
     width: 30%;
     list-style: none;
-
 }
-div.pieddepage ul  li {
+footer ul li {
     margin-bottom: 20px;
 }
-
-div.pieddepage ul li a {
-    color: #11009E;
-    background-color: #d9a9db;
+footer ul li a{
+    color: #12372A;
+    background-color: #ADBC9F;
     padding: 8px 12px;
     border-radius: 3px;
     font-weight: bold;
