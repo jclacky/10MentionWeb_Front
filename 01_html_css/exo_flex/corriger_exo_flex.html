@@ -1,56 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Exercice flexbox">
-    <meta name="author" content="Cleid Manigat">
-    <link rel="stylesheet" type="text/css" href="assets/css/corriger_exo_flex.css">
-    <title>Exercice flexbox</title>
+    <link rel="stylesheet" href="assets/css/corriger_maquette.css">
+    <title>Correction flex</title>
 </head>
+
 <body>
-    <nav>
-        <a href=""> ACCEUIL</a>
-        <a href="">HTML ET CSS</a>
-        <a href="">PHP</a>
+    <h1>Exercice flex</h1>
+    <h2>Exercice 1 : barre de navigation</h2>
+
+   <nav>
+        <a href="">Acceuil</a>
+        <a href="">HTML et CSS
+        <a href="">JavaScript</a>
         <a href="">MYSQL</a>
-    </nav>
-    <section>
-        <h2>Exercice 2 : zoning 1</h2>
+   </nav>
+
+   <section>
+        <h2>Exercice 2 : Zoning 1</h2>
         <div id="zoning1">
             <h3>Zoning n°1</h3>
             <header>
-                <p>ici le zoning 1</p>
+                <p>Ici le zoning 1</p>
             </header>
-
-            <!-- La balise aside permet d'afficher du contenu qui n'a pas de rapport direct avec le contenu principal, souvant représenté comme une sidebarre-->
-            <ection id="conteneur3">
-                <aside id="conteneurA">
+            <!-- La balise <aside> permet d'afficher du contenu qui n'a pas de rapport direct avec le contenu principal, souvent représenté comme une sidebarre -->
+            <aside>
+                <p>Zone de gauche</p>
+            </aside>
+            <section>
+                <p>Zone de droite</p>
+            </section>
+        
+        </div>
+   </section>
+   <section>
+        <h2>Exercice 3 : zoning 2</h2>
+        <div id="zoning2">
+            <h3>zoning n°2</h3>
+            <header>
+                <p>zone header</p>
+            </header>
+            <div>
+                <aside>
                     <p>zone de gauche</p>
                 </aside>
-                <section id="conteneurB">
+                <aside>
                     <p>zone de droite</p>
-        </div> 
-    </section>
-    <section>
-        <h2> Exercice 3 : zoning 2</h2>
-
-        <div id="zoning2"> 
-            <h3>Zoning n°2</h3>
-            <header>
-                <p>zone de header </p>
-            </header>
-        </div>
-        <aside>
-            <p>Zone de gauche</p>
-        </aside>
-            <div>
-                <p>Zone du milieu</p>
+                </aside>
+                <div>
+                    <p>zone du milieu</p>
+                </div>
             </div>
-            <aside>
-                <p>Zone de droite</p>
-            </aside>
+        </div>
+   </section>
 
-    </section>
+
+
+    
 </body>
 </html>
