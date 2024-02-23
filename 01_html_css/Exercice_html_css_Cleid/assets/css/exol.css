@@ -3,7 +3,9 @@
 }
 
 body{
-    margin: 0 auto;
+    width: 99%;
+    margin: 20px auto;
+    border: 2px solid gray;
 }
 
 header{
@@ -15,7 +17,7 @@ header{
     width: 100%;
   
 }
-.Entete :first-child {
+.Entete div:first-child {
     width: 50%;
     background-color: #5f9ea0;
     padding: 5px;
@@ -53,4 +55,31 @@ header{
     text-decoration: none;
     color: black;
 
+}
+
+.section1{
+    display: flex;
+    margin: 10px;
+
+}
+.section1 article:first-child{
+    background-color: #a9a9a9;
+    width: 50%;
+    padding: 50px;
+    text-align: center;
+    
+}
+.section1 article:last-child{
+    background-color: #708090;
+    width: 50%;
+    padding: 50px;
+    text-align: center; 
+}
+
+.section2 {
+    display: flex;
+}
+.section2 div p:first-child{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
