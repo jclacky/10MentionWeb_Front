@@ -79,7 +79,22 @@ header{
 .section2 {
     display: flex;
 }
-.section2 div p:first-child{
+.section2 div:first-child{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
+
 }
+.section2 div:first-child p{
+    background-color: #b0e0e6;
+    padding: 10px;
+}
+.section2 div article:first-child{
+    background-color: #87ceeb;
+    width: 25%;
+    padding: 10px;
+    
+}
+
+

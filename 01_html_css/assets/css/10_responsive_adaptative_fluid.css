@@ -1,0 +1,83 @@
+/* 
+    Une page HTML standard sans style déclaré bénéficiera néanmoins d'un ensemble de styles automatiquement appliqués par le navigateur, permettant ainsi de distinguer les différents éléments. 
+    Afin d'initialiser ces valeurs, on a la possibilité de les annuler dans le CSS en sélectionnant chaque élément et en modifiant ses propriétés.
+    Une autre approche consiste à utiliser le reset CSS : https://meyerweb.com/eric/tools/css/reset/
+    ou le mini reset : https://jgthms.com/minireset.css/
+
+*/
+@import url(reset.css);
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
