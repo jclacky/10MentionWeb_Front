@@ -1,0 +1,53 @@
+<!-- Ceci estun commentaire -->
+<!DOCTYPE html>
+    <!-- 
+        La balise DOCTYPE est la première balise obligatoire dans une page HTML, elle indiaue essentiellement à l'ordinateur qu'il s'agit d'un document HTML. C'est également une instruction pour le navigateur web concernant la version du langage de balisage pour la page.
+    Pour HTML4 : <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+    -->
+<html lang="fr">
+     <!--La balise html désigne le début de la page => balise obligatoire
+            <html> c'est la balise racine du document HTML. Elle englobe tout le contenu de la page web.
+        L'attribut "lang" dont la valeur est "fr" désigne la langue principale dans laquelle est rédigé le contenu de la page  : le français utilisé côté utilisateur.
+            -> Important pour l'accessibilité -> il est recommadé d'inclure cette déclaration de langue pour garantire une meuilleure accessibilité, compréhension et une intérprétatiob correcte de la page pas l'utilisateur et les système automatisés.
+        Lorsque l'on donne une valeur  "zxx", on utilise cette abréviation essentiellemnt en Lorem Ipsum. -->
+<head>
+    
+    <!--
+        Element d'en-tete, la balise head regroupe toutes les méta-infotions et contient les paramètre d'en-tete de la page html qui sont invisibles pour l'internaute 
+
+        Les meta sont les balises qui fournissent des méta-données au navigateur et moteur de recherche c-à-d des informations au sujet de document html en question. Ils existent de très nombreuses balises méta et nous allons pouvoir ajouter différents attributs à l'élément qui vont nous servir à spécifier différents types de données.
+
+         Les attributs les plus courants de l'élément méta vont être les attributs : charset - name - content. 
+            => L'attribut charset qui sert à indiquer le jeu de caractère  de notre document, y compris ceux de différentes langues (afficher les caractères de spéciaux  tels que les accents, les cedilles etc... )
+            => l'attribut name va nous permettre d'indiquer le type de méta-données que l'on souhaite passer 
+            => L'attribut content va nous permettre de passer une méta-donnée en soi.
+        
+    -->
+    <meta charset="utf-8"> <!--Il est recommandé de placer l'attribut charset au tout début de la balise head, surtout avant la balise title, car cette dernière peut déjà être concerné par l'encodage des caractères. Une seule valeur cependant devrait être utilisée aujourd'hui autant que possible : utf-8-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <!--
+        le viewport représente la partie visible d'une page web par un utilisateur.
+         La taille de cette fenêtre va bien evidemment varier en fonction de la taille de l'écran de l'utilisateur et de l'appareil utilisé.
+        "width=device-width, initial-scale=1.0" : contrôler l amise en page et l'apparence initiale de la page sur les navigations mobiles.
+            1 - width=device-width : ajuster la largeur de la page en fonction de la largeur de l'appareil.
+            2 - initial-scale=1.0 : le niveau de zoom initial lorsque la page est chargée pour la première fois par le navigateur, signifie qu'il n'y a pas de zoom.
+    -->
+<title> Ma première page HTML - structure de base de la page </title>
+<!--
+    Le titre du document html, cette balise est obligatoire, le contenu de cet élément n'apparait pas directement dans la page mais : 
+    1- sur l'onglet : la barre de titre du navigateur web
+    2- comme titre de marques pages (favoris)
+    3- par les moteurs de recherches comme titre de résultats de recherche
+-->
+
+
+</head> <!-- Fin de la balise head-->
+<body>  <!-- Le début de la partie visible dans le navigateur-->
+
+<!-- tout ce qui sera affiché sur la page s'ecrit à l'interieur de la balise body : le corps du document -->
+
+</body> <!-- Fin de la balise body :  -->
+
+
+</html>

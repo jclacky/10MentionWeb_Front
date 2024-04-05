@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 50%;
+    margin: 0 auto;
+    background-color:rgb(228, 228, 228);
+
+}
+h1{
+    text-align: center;
+}
+caption{
+    color: deepskyblue;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+table{
+    border: 3px solid rgb(85, 83, 78);
+    width: 90%;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgb(180, 180, 180);
+    /*Par défaut la bordure contient 2 trait , pour que le trait soit unique on utilise la proprieté border-collapse avec une valeur colapse*/
+    border-collapse: collapse;
+}
+th, td {
+    color: black;
+    border: 2px solid #be7575;
+    padding: 10px;
+    text-align: center;
+}
+thead, tfoot{
+    background-color: rgb(47, 77, 77);
+}
+
+#demoRowspan{
+        border: 3px solid rgb(85, 83, 78);
+        width: 90%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        padding: 30px;
+        background-color: rgb(85, 33, 44);
+        /*Par défaut la bordure contient 2 trait , pour que le trait soit unique on utilise la proprieté border-collapse avec une valeur colapse*/
+        border-collapse: collapse;
+}
+#demoRowspan tbody tr td {
+    text-align: center;
+}
+#demoRowspan tr :first-child:not(:last-child){
+    background-color: #be7575;
+}
+
+
+#exo10 td{
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+
+.noir{
+    background-color: black;
+} 
+#exo20 td{
+    height: 60px;
+    width: 80px;
+    border: none;
+}
+.rouge{
+    background-color: red;
+}
+
+.borderT {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}

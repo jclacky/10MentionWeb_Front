@@ -1,0 +1,46 @@
+/*** Feuille de style ***/
+/* *{
+    box-sizing: border-box;
+
+} */
+
+.section{
+
+    margin: 20px auto;
+    border:  #ff3366 ridge;
+    border-top-width: 4mm;
+    border-bottom-width: 4mm;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    text-transform:uppercase;
+    margin: 20px;
+}
+.section1{
+    background-color: #ffe7e7;
+    margin: 70px;
+    padding: 20px;
+}
+.section1 h2{
+    text-align: center;
+}
+img {
+    width: 8%;
+    margin: auto;
+    display: block;
+
+}
+.image{
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+li a {
+    text-decoration: none;
+    color: #ff3366;
+    padding: 200px 200px;
+}

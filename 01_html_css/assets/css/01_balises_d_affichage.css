@@ -1,0 +1,27 @@
+/* Feuille de style  */
+/* Commentaire en css */
+
+/* Syntaxe du langage de développement css  */
+
+/*
+        selecteur{
+            propriété: valeur;
+        }
+
+     */
+        /*je selectionne deux élément sau meme temps sur la meme ligne s'il ont les meme attributs avec une separation d'une virgule */ 
+     p, pre{
+        color:blue
+     }
+
+     /* 
+    Les valeurs possibles pour les couleurs:
+        ->Notation hexadecimale : #ffffff (blanc)
+        ->notation hexadecimale courte : #fff
+        ->notation rgb(255, 255, 255) -> rouge vert bleu
+        ->notation rgba(255,255,255,0) -> le dernier chiffre correspond à l'opacité : entre 0 (transparent) et 1 (opaque)
+        -notation avec mots clés -> red, green, bleu ... 
+*/
+span{
+   color:green;
+}

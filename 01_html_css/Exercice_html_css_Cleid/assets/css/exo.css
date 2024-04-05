@@ -1,0 +1,77 @@
+/* Feuilles de styles pour la page exo.html*/
+body{
+    background-color: #FBFADA;
+}
+header{
+    text-align: center;
+    border: 2px solid #436850;
+    padding: 20px;
+}
+
+h1{
+    text-transform: uppercase;
+    color: #12372A;
+}
+.lien a{ 
+    background-color: #ADBC9F;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 33%;
+    padding: 5px 0;
+    border-radius: 10px;   
+}
+.lien a:hover{
+    background-color: #12372A;
+}
+article.articles {
+    border : 2px solid #436850;
+    padding: 20px 40px;
+    margin-top: 30px;
+}
+article.articles1 {
+    text-align: center;
+}
+article.articles1 img{
+    border-radius: 20px;
+}
+article.articles2 {
+    background: url(../image/codeht.jpg) ;
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+article.articles2 p{
+    display: inline-block;
+    border: solid 2px #12372A;
+    width: 30%;
+    padding: 10px;
+    background-color:  rgb(173, 188, 159, 0.3);
+    text-align: left;
+}
+footer {
+    border: solid 2px #12372A;
+    margin-top: 20px;
+    text-align: center;
+}
+footer ul{
+    display: inline-block;
+    width: 30%;
+    list-style: none;
+}
+footer ul li {
+    margin-bottom: 20px;
+}
+footer ul li a{
+    color: #12372A;
+    background-color: #ADBC9F;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-decoration: none;
+}
+

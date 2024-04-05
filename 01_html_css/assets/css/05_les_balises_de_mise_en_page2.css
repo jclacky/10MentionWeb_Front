@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: aliceblue;
+}
+header{
+    text-align: center;
+    border: 2px solid #3c3c3c;
+    padding: 20px;
+}
+h1 {
+    text-transform: uppercase;
+    color: yellow;
+    font-size: 50px;
+}
+nav a {
+    color: chartreuse;
+    display: inline-block;
+    width: 33%;
+    padding: 5px;
+}
+
+main {
+    margin-top: 10px;
+    padding: 20px 50px;
+    border: 2px solid #3c3c3c;
+}
+
+main :first-child {
+    border-radius: 50px;
+}
+main :first-child img { /*Pseudo */
+    border-radius: 50px;
+}
+main section:nth-child(2) { /* Pseudo class :nth-child(2) désigne le deuxième élément enfant dans un élément parent*/
+    background-image: url(../img/codeht.jpg);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: forestgreen ;
+}
+main section:nth-child(2) article {
+    display: inline-block;
+    border: solid 2px #d9a9db;
+    width: 30%;
+    padding: 20px;
+    text-align: left;
+    background-color: dimgrey;
+    
+}
+
+
+
+footer {
+    border: solid 2px #080596;
+    margin-top: 20px;
+    text-align: center;
+}
+footer ul{
+    display: inline-block;
+    width: 30%;
+    list-style: none;
+}
+footer ul li {
+    margin-bottom: 20px;
+}
+footer ul li a{
+    color: #2704a3;
+    background-color: #708fc7;
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-weight: bold;
+}

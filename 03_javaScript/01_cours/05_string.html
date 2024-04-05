@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Les strings en JS</title>
+</head>
+<body>
+    
+
+    <script>
+    // -----------------------
+    //-------LES STRONGS ET CONCATENATION
+    //--------------
+    // Nous pouvons initialiser une chaine de caractére de plusieurs façons
+    // avec de guillemets simple (simple quotes)
+    const PRENOM = ' Cleid';
+
+    // avec de guillemets simple (double quotes)
+    const NOM = 'MANIGAT';
+    // avec de simple quotes et backslash (ou antislash) : permet d'échaper un caratère dans le string
+    const ADRESSE = 'J\'habite à Corbeille-essonnes';
+        
+    document.write( 'Je suis' + PRENOM  + " "+  NOM + ", "+  ADRESSE + '<br>' );
+    //Initialiser les constante avec un seul préfixe
+    const PRENOM2 =  "SEN", NOM2 = 'MANIGAT'; 
+    document.write( 'Je suis' + PRENOM2  + " "+  NOM2 + '<br>');
+    // Avec le baquotes ( '') ( alt gr +7 )
+    // Bonjour vous êtes les bienvenue : Cleid ET SEN
+    let bienvenue = ` Bonjour vous êtes les bienvenu : ${PRENOM2} et ${PRENOM}`;
+    document.write(bienvenue + '<br>');
+
+
+    // let age = prompt ('Entrez votre âge')
+    // document.write(`Vous avez : ${age} ans` + '<br>');
+
+    let fruits = "Pommes";
+// document.write(`fruits`);
+fruits+= `Fraise`;
+fruits+= `Mangue`;
+document.write(fruits);
+// contrairement au "=" d'affectation qui remplace la    valeur de la variable j'utilise ici += qui va ajouter la nouvelle valeur à la valeur de la variable
+//------------------------
+
+
+    //---------------------------------
+        //---------- Convertir un number vers string
+    //-------------------
+     unNombre = unNombre.toString();
+     document.write(typeof(unNombre));
+
+
+
+
+     // let a = "12.5";
+        // console.log(typeof a);
+        // console.log(a);
+        
+        // let b = parseFloat(a);
+        // console.log(b);
+        // console.log(typeof b);
+
+        // let c = parseInt(a);
+        // console.log(c);
+        // console.log(typeof c);
+
+    </script>
+</body>
+</html>

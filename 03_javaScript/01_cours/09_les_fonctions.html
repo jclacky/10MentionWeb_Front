@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+         //-----------------------
+                // Les fonctions
+        // ----------------------
+        /*
+            Un des grands principes en programmation est d'avoir un code DRY (Don't Repeat Yourself)
+            Les fonctions sont des blocs de code réutilisables et modifiables, à volonté qui peuvent être appelés pour effectuer une tâche spécifique. Elles sont définies à l'aide du mot-clé function     
+        */
+
+          //-----------------------
+                // SYNTAXE
+        // ----------------------
+
+
+        // Cette syntaxe définit une fonction nommée mafonction 
+        function maFonction () { // Fonction nommées va être applelées en utilisant ce nom
+            // corps de la fonction
+        };
+
+        // Cette syntaxe définit une fonction anonyme et l'assigne à une variable nommée maFonction 
+        let maFonction1 = function() { // fonction anonymes
+
+        }; 
+        // Cette syntaxe est plus concise introduite dans ECMAScript 6 (ES6)
+        () => { // Fonction fléchée
+
+
+            // Corps de la fonction
+        };
+
+
+          //-----------------------
+                // INITIALISATION
+        // ----------------------
+        function greetings(){ // Déclaration d'une fonction
+
+        }
+        greetings(); // je vais executer ma fonction 
+
+            // Afin que notre fonction soit paramétrable, nous allons utiliser des paramètres.
+            // Des paramètres sont comme des variables /options, qui sont utilisées dans la fonction, et ces paramètres sont fournis en tant qu'arguments lors de l'appel de la fonction
+
+
+        // let prenom = prompt( "Entrez votre prenom");
+        // function bonjour (prenom){
+        //     document.write(`Bonjour ${prenom} <br> `)
+        // }
+        // bonjour(prenom);
+
+        // // vous pouvez mettre autant de paramètres que nécessaire 
+        // let profession = prompt( "Entrez votre profession");
+
+        // function bonjour1(prenom, profession){
+        //     document.write(`je suis ${prenom}, je travaille en tant que ${profession} <br>`)
+        // }
+        // bonjour1(profession, prenom);
+
+        // Créez une fonction permettant d'effectuer la multiplication de deux nombres passés en paramètre.
+        // let nbr1 = prompt( "entrez un nombre")
+        // let nbr2 = prompt( "entrez un nombre")
+        // function nombreab(nbr1, nbr2){ 
+        //     document.write( "le resultat est " + nbr1*nbr2)
+
+        // }
+        // nombreab(nbr1, nbr2)
+
+        
+
+
+
+
+
+        //-----------------------
+                // Retourner une valeur
+        // ----------------------
+            // Les fonctions peuvent retourner une valeur en utilisant le mot-clés return. Si v aleur n'est retournée, la fonction retourene undefined.
+
+        function calculAge(annee, naissance){
+            // age = annee - naissance
+            document.write(   age = annee - naissance + "<br>")
+        }
+        calculAge(2024 , 1992);
+
+
+
+        /*
+            Votre mission, que vous devez accepter :
+            Réaliser une fonction permettant à un internaute de :
+            - Saisir son prénom dans un prompt
+            - Retourner à l'utilisateur : Bonjour [PRÉNOM], quel âge as-tu ?
+            - Saisir son âge
+            - Comfirmer avec l'utilisateur son année de naissance
+            - il est d'accor !  afficher ensuite un récapitulatif dans la page :
+            Bonjour [PRÉNOM], tu as [ÂGE] !
+
+            Attention : Vérifier si l'utilisateur a bien saisi le prénom et le nom, que le prénom est bien une chaîne de caractères et l'âge est bien un nombre entier.
+        */
+       
+        function hello(){
+
+let firstName = prompt("Quel est votre prenom ?")
+
+if (isNaN(firstName) && firstName != null && firstName != " ") {
+
+    let birth = prompt(` Bonjour ${firstName}, quel âge as-tu ? `);
+
+    if (birth != null && !isNaN(parseInt(birth)) && birth!= " ") {
+
+        let date = new Date(); // Date() permet de créer une instance qui représente un moment précis dans le temps.
+        
+        let anneeDeNaissance = date.getFullYear - birth; // getFullYear = retourne l'année entière (méthode JS)
+
+        confirm(` Vous êtes né en ${anneeDeNaissance} `);
+
+        document.write(` Bonjour ${firstName}, tu as ${birth} ans et tu es né en ${anneeDeNaissance} `)
+
+    } else {
+        
+        alert('Entrez votre age SVP')
+
+    }
+} else {
+    
+    alert('Entrez votre prenom SVP');
+}
+}
+hello()
+        
+ //-----------------------
+                // PPORTEE
+        // ----------------------
+
+    // Les variables définies à l'intérieur d'une fonction sont locales à cette fonction
+        // les variables déclarées à l'intérieur d'une fonction sans utiliser var, let ou const seront automatiquement considérées comme globales
+
+        function maFontion3( ){
+            maVariable = 10 // pas var, let, const
+        }
+
+        maFontion3()
+        document.write (maVariable); 
+
+        //Depuis ES6 (ECMAScript 6, en 2015), il existe une autre façon d'écrire nos fonctions
+
+        //--------------------------
+        // FONCTION FLÉCHÉE (arrow functions)
+        //--------------------------
+
+        //  sont une syntaxe plus concise pour définir des fonctions 
+        // sont devenues très populaires en raison de leur simplicité et de leur lisibilité
+
+        let fonctionFlechee = (x, y ) => {
+            console.log (x+y);
+
+        };
+
+        // Si la fonction ne prend qu'un seul paramètre, vous pouvez meme omettre le parenthèse autour 
+    </script>
+</body>
+</html>

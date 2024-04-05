@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        ////-------------------------------
+            ///LES NORMES et les calculs
+        ///--------------------------------
+
+        // Pour initialisser un nombre, il suffit de l'écrire sans les guillemets
+        const A = 5 * 10;
+        const B = 10 / 2;
+        const C = 15 - 5;
+        const D = 20+ 10;
+        const E = 5 % 10;
+
+        // Nouys pouvons effectuer tout type de calcul 
+
+        const F = A + B ; // 55 + 5
+        // console.log (F);
+        // Le résultats de l'addition de A et B est égale à : 55
+        document.write("Le resultat de l'addition de A et B est égale à :" + F ); // on concatène avec une chaine de caractère en utilisant le signe "+"
+        //Soustraction 
+        const SOUSTRACTION = C - 4;
+        document.write("Le resultat de la soustraction de C - 4 est égale à :" + SOUSTRACTION  + "<br>");
+        //Multiplication 
+        const MULTIPLICATION = D * 5;
+        document.write("Le resultat de la multipication de D + 5 est égale à :" + MULTIPLICATION + "<br>");
+        //Division 
+        const DIVISION = B % 5;
+        document.write("Le resultat de la division de D % 10  est égale à :" + DIVISION + "<br>");
+        //Modulo
+        const MODULO = B % 10;
+        document.write("Le resultat de la division de B %10 + 5 est égale à :" + MODULO + "<br>");
+
+        //--------------------------------
+        let g = 10 ;
+        //1ère façon
+        // g = g + 5;
+
+        //2ème façcon de faire 
+            g+=5;
+        document.write(g + '<br>');
+
+        //---------------------------
+        // Incrénentation et décrénentation
+
+        // Nous pouvons ajouter 1 ou enlever 1 avec ++
+            let h = 50;
+            h++;
+            document.write(h+ '<br>' ); // 51
+
+            h--;
+            document.write(h+  '<br>' );
+
+            let i = 1;
+            let j = i++; // 2
+            document.write( i + '<br>');
+            document.write( j + '<br>');
+            // i++ affecte puis incrémente la valeur. Dans l'exemple ci dessous, i++ incrémentera la valeur de i, mais retournera la valeur d'origine avant d'être incrémenté.
+
+            // let k = 1;
+            // document.write( k + '<br>');
+            // let l = ++k; // 
+            // document.write( k + '<br>');
+            // document.write( l + '<br>');
+            // ++k incrémente puis affecte la valeur. Dans l'exemple ci dessous, ++k incrémentera la valeur de K, puis retournera la valeur incrémenté
+
+
+            let donne = prompt ( 'Inserer un nombre');
+            let donneeAuCaree= donne ** 2;
+            let donneeAuCube = donne ** 3;
+            alert('Voici le nombre au carée : ' + donneeAuCaree + ' et voici le nombre au cube ' + donneeAuCube);
+            document.write( 'Voici le nombre au carée : ' + donneeAuCaree + ' et voici le nombre au cube ' + donneeAuCube) ;
+       
+       
+
+
+            
+
+    </script>
+</body>
+</html>

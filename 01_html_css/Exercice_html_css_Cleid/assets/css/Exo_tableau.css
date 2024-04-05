@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ffe7e7;
+}
+
+caption{
+    color: #6e2142;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+table{
+    border: 3px solid #6e2142;
+    width: 90%;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #fff6e9;
+    /*Par défaut la bordure contient 2 trait , pour que le trait soit unique on utilise la proprieté border-collapse avec une valeur colapse*/
+    border-collapse: collapse;
+}
+th, td {
+    color: black;
+    border: 2px solid #6e2142;
+    padding: 10px;
+    text-align: center;
+}
+th{
+    background-color: #be7575;
+}
+
+
+#demoColspan {
+    border: 2px solid #6e2142; ;
+}

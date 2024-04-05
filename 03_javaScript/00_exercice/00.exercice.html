@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice JS</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        // Exercice 1 
+        // écrire le code invitant l'utilisateur à saisir d'abord son nom et ensuite son prénom dans 2 boîtes de dialogue successives
+        // afficher ensuite dans une autre boîte de dialogue le nom et le prénom de l'utilisateur
+        // Attention à bien respecter les espaces entre les mots dans le message final.
+
+
+        // Solution - Exercice 1
+        // let nom = prompt( " Veuillez saisir votre nom :");
+        // let prenom = prompt( " Veuillez saisir votre prenom :");
+        // console.log('Bonjour ' + prenom +" "+ nom );
+        // alert('Bonjour ' + prenom +" "+ nom);
+        // // document.write('Bonjour ' + prenom +" "+ nom +"<br>")
+
+        // Exercice 2
+        // Ecrivez un programme js qui fait saisir un prix hors taxes à l'utilisateur, puis qui affiche le prix TTC correspondant en se basant sur un taux de TVA à 20%
+        // Vous pouvez effectuer l'affichage dans la console, dans un pop-up ou sur la page directement.
+        //INDICE :multiplier le prix HT par 1,20 pour obtenir le prix TTC.
+
+        // // Solution - Exercice 2
+        // let prixHT = prompt( 'Veuillez saisir le prix HT:');
+        // let taxe = 1.20;
+        // const prixTTC = prixHT * taxe;
+        // console.log('Le prix TTC est de :' + prixTTC );
+        // alert('Le prix TTC est de :' + prixTTC );
+        // // document.write('Le prix TTC est de :' + prixTTC  +"<br>")
+
+
+        // Exercice 3
+        // Ecrivez un programme qui fait saisir une température en degrés celsius, puis affiche le résultat de sa conversion en degrés fahrenheit.
+        // Rappel : en informatique, la virgule s'écrit avec un point.
+        // INDICE : // [°F] = [°C] x 9/5 + 32.
+        // let celsius = prompt("Entrez la température en degrés Celsius : ");
+        // let fahrenheit = celsius * 9 / 5 + 32;
+        // alert( celsius + "degrés Celsius correspondent à" + fahrenheit + "degrés Fahrenheit");
+        // console.log( " "+celsius + ""+ "degrés Celsius correspondent à" +" "+ fahrenheit +" "+ "degrés Fahrenheit" );
+
+
+        // J'arrive sur un Espace sécurisé au moyen du prénom et de l'âge.
+        // Je dois saisir mon prénom et mon age pour être authentifié sur le site (ces informations seront au préalable stocké dans des variables prenom et age).
+        //  En cas d'echec, une alerte m'informe du problème.
+        //  Si tout se passe bien, un message de bienvenue m'accueille.
+
+        // let prenom1 = prompt("Quel est votre prénom ?").toLowerCase(); // je récupère le prénom de l'utilisateur 
+
+        // //let age = prompt("Quel est votre age ?")
+        // //age = parseInt(age);
+        // let age = parseInt(prompt("Quel est votre age ?")); // je récupère l'age de l'utilisateur
+
+        //     if (prenom1 == "semir" && age == 27) { // je vérifie si mes deux conditions sont vrai
+
+        //         document.write("Bienvenue sur notre site !!");
+
+        //     } else {
+        //         alert("problème sur les informations saisies");
+        //     }
+
+
+
+
+
+
+
+
+
+    // Exercice 5 
+            /*
+                Déclarer deux tableaux :
+                    tab qui contient 5 nom 
+                    tab2 qui contient 5 premons
+                    tab3 qui contioen 5 ages
+                Afficher en utilisant une boucle les noms et prénom associés dans un document write
+            
+            */
+        // SOLUTION
+        let tab1Nom = [ "Saajine", "Manigat", "Monteiro", "Maany"  ]; 
+        
+        let tab2Prenom = [ "Karen", "Holy", "Galawi", "Avé" ]; 
+        
+        let tab3Age = [ 23 ,97 , 34 , 35, 19   ]; 
+        
+        // for (  i=0 ; i < tour.lenght ; i++) {
+        //     document.write(`${tab1Nom[i]} ${tab2Prenom[s]} ${tab3Age}`)
+        // };
+        
+        // 2ème façon de faire
+        
+            let tab4 = [tab1Nom, tab2Prenom, tab3Age];
+            console.log(tab4)
+            for (let  j=0; tab4[0].length; j++)
+            document.write(`${tab4[0][j]}, ${tab4[1][j]}, ${tab4[2][j]} ` )
+          // Exercice 6
+
+        /*
+            Ecriver un programme pour qu'il fasse 10 tours de manège en affichant le numéro du tour à chaque tour dans la console :
+            En utilisant le boucle for
+
+
+            Le manège démarre
+            C'est le tour numéro 1
+            C'est le tour numéro 2
+            ...
+            C'est le tour numéro 10
+            Le manège s'arrête
+        */
+            // for (let t=1; t=10; t++ ){
+            //     if( t < 2) {
+            //         document.write("le manège démarre " + "<br>")
+            //         }
+            // if( t <= 10 ) {
+            // document.write("c'est le tour n°+ " + "<br>")
+            //  }
+            //  if( t > 9 ) {
+            //         document.write("le manège s'arrête " + "<br>")
+            //         }
+            // }
+            
+    // Exercice 7
+        /* 
+            Créer un script qui permet de :
+                - récupérer la moyenne de BAC à votre utilisateur
+                - vérifier si l'utilisateur a bien renseigner un nombre, 
+                si un nombre :
+                    => si la moyenne est supérieur ou égale à 0 et strictement inférieure à 10  -> afficher "tu es recalé !"
+                    => si la moyenne est entre 10 et 11 -> afficher "Tu passes, sans mention !"
+                    => si la moyenne et entre 12 et 20 -> afficher Reçu avec mention ! :) 
+                    => si la moyenne est inférieur à 0 ou supérieur à 20  -> afficher "La moyenne doit être comprise entre 0 et 20 ! :)"
+                Si ce n'est pas un nombre :
+                    =>afficher  "Vous n\avez pas saisi de nombre !"   
+        */
+
+        // Solution_Exercice 7
+           // récupérer la moyenne de BAC à votre utilisateur
+        let moyenne =prompt( 'Saisissez votre moyenne de BAC') ;
+        let estUnNombre = (valeur) => {
+        for (let i = 0; i < valeur.length; i++) {
+        if (isNaN(valeur[i])) {
+            return false;
+                }
+             }
+            return true;
+
+        };
+        
+        
+      
+        
+</script>
+</body>
+</html>

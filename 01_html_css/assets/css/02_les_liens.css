@@ -1,0 +1,18 @@
+body{
+    background-color: lightgray;
+}
+
+a{
+    text-decoration: none; /*text-decoration: permet de changer la décoration de texte, avec la valeur "none" je désactive le surlignement */
+    color: brown;
+}
+
+/*Un pseudo classe
+un pseudo classe est un mot clé préfixé par deux points, qui s'ajoute au sélecteur pour appliquer un style à un élément dans un cas particulier 
+*/
+a:hover{ /* :hover designe un objet survolé */
+    text-decoration: underline;
+    color: green; 
+    background-color: gold;
+}
+
