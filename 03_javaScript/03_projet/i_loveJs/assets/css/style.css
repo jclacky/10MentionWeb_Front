@@ -16,6 +16,9 @@
     --font-general : Arial, Helvetica, sans-serif;
 
 }
+body {
+    font-size: 1.4rem;
+}
 /*  Barre de navigation desktop */
 
 .navbar-desktop {
@@ -81,7 +84,7 @@
 
     background-color: 
 #CBE6FF;
-    height: 100vh;
+
 }
 
 .banniere-titre {
@@ -151,11 +154,9 @@ h1 {
     width: 100%;
     margin: 0 auto;
 }
-.bloc-btn i {
+.bloc-btn .bi:not(.bi-check)  {
     font-size: 3.5rem;
 }
-
-
 .btn-abonner {
     padding: 1rem;
     font-size: 1.4rem;
@@ -167,39 +168,126 @@ h1 {
 }
 
 
+/* ***************  cookies ****************** */
 
-/* ***************** Coookies************** */
+    .cookies {
+        background-color: 
+grey;
+        padding: 3rem;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        opacity: 1;
+        transition: .5s;
 
-.cookies{
-    background-color: grey;
-    padding: 3rem;
+    }
+
+    .cookies button{
+        color: 
+white;
+        padding: 1rem;
+        margin: 1rem;
+        border: none;
+        border-radius: 10px;
+
+    }
+
+    .btn-success{
+        background-color: 
+#1E2337;
+    }
+    .btn-deny{
+        background-color: 
+blue;
+    }
+
+
+/**************** carousel *****************/
+
+.outils > div {
+
+    background-color: 
+#1E2337;
+    color:
+#fff;
+    padding: 2rem;
+}
+.slider {
+    background-image: url(../img/concrete_seamless.png);
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    opacity: 1;
-    transition: 2ms;
+    padding: 10rem;
+
 }
 
-.cookies button {
-    color: white;
-    padding: 1rem;
-    margin: 1rem;
-    border: none;
+.slider img  {
+    margin-top: 5rem;
+    border: 20px solid 
+#fff;
     border-radius: 10px;
+    box-shadow: 0px 2px 16px 1px 
+rgba(0,0,0,0.75);
+    transform: rotate(-8deg);
+}
+/* ******  Loader */
+#loader{
+    width: 100vw;
+    height: 100vh;
+    background-color: #CBE6FF;
+    position: fixed;
+    z-index: 1;
 }
 
-.btn-success {
-    background-color: #1E2337;
+.icon-loader{
+    width: 100px;
+    height: 100px;
+    border: 10px solid #61b3ff;
+    border-top: 10px solid #1E2337;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.2);
+    animation-name: loader;/*Le nom de l'animation est loader*/
+    animation-duration: 1s; /*L'animation dure 1 seconde */
+    animation-iteration-count: infinite; /* Elle  se repete à l'infinie*/
+    animation-timing-function: linear ; /* La progression avec l'animation pendant la durée de chaque cycle*/
+
+}
+.hideLoader{
+    display:none !important;
+}
+@keyframes loader {
+    /* Début de l'animation
+    0%{
+        transform: rotate3d(0deg);
+    }
+    /* fin de l'animation */
+    /* 100%{
+        transform: rotate3d(360deg);
+    } */ 
+    
+     /* Début de l'animation*/
+    from {
+        transform: rotate(0deg);
+    }
+    /* fin de l'animation */
+    to{
+        transform: rotate(360deg);
+    }
 }
 
-.btn-deny {
-    background-color: blue;
+/**************** Keyboard *****************/ 
+.mario{
+    position:relative;
+    
+}
+#mario{
+    position:absolute;
+    left: 30px;
 }
 /**************** footer *****************/
 
 
 footer {
-    background-color: #1E2337;
+    background-color: 
+#1E2337;
     margin: 0 !important;
     
 }
@@ -208,17 +296,8 @@ footer li {
 }
 
 footer li a{
-    color: #fff;
+    color: 
+#fff;
     font-size: 1.3rem;
     
 }
-
-
-
-
-
-
-
-
-
-
